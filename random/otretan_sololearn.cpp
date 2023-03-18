@@ -114,4 +114,4 @@ while (i < bintang) {
 //	res += x;
 //}
 // 	cout << res;
- 	
+
