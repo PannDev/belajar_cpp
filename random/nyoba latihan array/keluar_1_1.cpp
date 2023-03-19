@@ -4,13 +4,18 @@
 using namespace std;
 typedef long long ll;
 typedef unsigned long long ull;
-#define PannDev ios_base::sync_with_stdio(0);cin.tie(0);cout.tie(0);
+// #define PannDev ios_base::sync_with_stdio(0);cin.tie(0);cout.tie(0);
 
 int main() {
-    PannDev
+    // PannDev
     
-    int arr[] = {1,2,3,4,5};
-    cout << arr[0];
+    char arr[] = { '1', '2', '3', '4', '5', '6' };
+    
+    // i < 5 artinya keluarin 0 - 4
+    // arr ke 5 tidak keluar (6)
+    for (int i = 0; i < 5; i++) {
+        cout << arr[i] << endl; // keluarin isi didalam array
+    }
 
     return 0;
 }
