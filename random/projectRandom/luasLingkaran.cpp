@@ -7,7 +7,7 @@ double hitungLuas(int r) {
 }
 
 void tampilLuas(int r) {
-    cout << "Luas Lingkaran dengan jari-jari " << r << " adalah " << hitungLuas(r) << endl;
+    cout << "Luas Lingkaran dengan jari-jari " << r << " adalah " << hitungLuas(r) << pow(cm ,2) << endl;
 }
 
 int main( ) {
