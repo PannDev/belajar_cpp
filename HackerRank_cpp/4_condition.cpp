@@ -8,8 +8,12 @@ int main(){
     // PannDev
     
     string nameNum[] = {
-        ""
-    }
+        "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"
+    };
+    int input; cin >> input;
+    // pakai if kepanjangan malas
+    string res = (input <= 9) ? nameNum[input - 1] : "Greater than 9" ;
+    cout << res << endl;
 
     return 0;
 }
