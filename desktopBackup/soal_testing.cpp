@@ -34,3 +34,13 @@ int main()
 
     return 0;
 }
+
+/*
+
+Misalkan Anda memasukkan 6 digit angka. 
+Tulis program untuk menampilkan 
+angka yang digitnya 2 lebih besar dari digit yang sesuai dengan angka yang dimasukkan.
+Misalnya, jika nomor yang Anda masukkan adalah 569678, maka nomor yang ditampilkan adalah 781890.
++2 per digit
+
+*/
