@@ -1,24 +1,33 @@
 #include <bits/stdc++.h>
-#define PannDev ios::sync_with_stdio(0);
+#define PannDev ios_base::sync_with_stdio(0);
+#define nL <<endl
 using namespace std;
 
-int fibo(int n)
-{
-    if (n == 0 | n == 1)
-    {
-        return n;
-    }
+int main () {
+    PannDev
+    // f_n = f_n1 + f_n2
 
-    return (fibo(n - 1) + fibo(n - 2));
-}
+	int n;
+	int f_n;
+	int f_n1;
+	int f_n2;
 
-int main()
-{
-    PannDev int n;
-    cin >> n; // masukan nilai ke-n
+	cout << "Program Deret Fibonaci" nL;
+	cout << "Masukan nilai ke-n: ";
+	cin >> n;
 
-    for (int i = 0; i <= n; i++)
-    {
-        cout << fibo(i) << " ";
-    }
+	f_n1 = 1;
+	f_n2 = 0;
+	cout << f_n2 << " ";
+	cout << f_n1 << " ";
+	for(int i = 1; i < n; i++){
+		f_n = f_n1 + f_n2;
+		f_n2 = f_n1;
+		f_n1 = f_n;
+		cout << f_n << " ";
+	}
+	cout nL;
+
+
+	return 0;
 }
