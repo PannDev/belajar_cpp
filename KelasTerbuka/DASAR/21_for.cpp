@@ -27,7 +27,7 @@ int main() {PannDev
 	cout << "\n Loop4 \n";
 
 	int total = 0;
-	for(int i = 1; i <= 10; i++, total += i){
+	for(int i = 1; i <= 10; ++i, total += i){
 		cout << i << " || " << total nL; 
 	}
 
