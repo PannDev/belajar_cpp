@@ -16,9 +16,9 @@ using namespace pann;
 int main () {PannDev
 func(); // ini adalah fungsi biasa
 
-std::cout << pann::b nL;
-pann::pFunc();
-pann::cout(100);
+std::cout << pann::b nL; // int b = 10;
+pann::pFunc(); // ini adalah func pann
+pann::cout(100); // 100
 
 // using namespace pann;
 /*
