@@ -13,6 +13,8 @@ string jurusan;
 
 };
 
+
+
 int main() { PannDev
 
 fstream myFile;
@@ -20,11 +22,18 @@ Mahasiswa readData;
 
 myFile.open("data.bin", ios::in | ios::binary);
 
-myFile.read(reinterpret_cast<char*> (&readData), sizeof(Mahasiswa) );
+//  0-----56-----|-----56-----|-----56-----|
+// cout << sizeof(Mahasiswa) nL;
+
+// int position = 1;
+// readData = getData(position,myFile);
 
 cout << readData.NIM nL;
 cout << readData.nama nL;
 cout << readData.jurusan nL;
+
+myFile.close();
+
 
 return 0;
 }
