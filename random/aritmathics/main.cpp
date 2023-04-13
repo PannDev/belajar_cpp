@@ -6,16 +6,26 @@ using namespace std;
 
 // prototype
 int getOption();
-int handleAddition();
-int handleSubtraction();
-int handleMultiplication();
-int handleDivision();
-int handleModulo();
+int handleAddition(int a, int b) {
+    return a + b;
+}
+int handleSubtraction(int a, int b) {
+    return a - b;
+}
+int handleMultiplication(int a, int b) {
+    return a * b; 
+}
+int handleDivision(int a, int b) {
+    return a / b;
+}
+int handleModulo(int a, int b) {
+    return a % b;
+}
 
 int main() { PannDev
     
     int option = getOption();
-    auto a, b;
+    int a, b;
     char yn;
 
     // 1 2 3 4 5 6
@@ -25,23 +35,23 @@ int main() { PannDev
         switch (option) {
             case ADDITION:
             cin >> a >> b;
-            handleAddition(a,b);
+            cout << handleAddition(a,b);
         break;
         case SUBTRACTION:
             cin >> a >> b;
-            handleSubtraction(a,b);
+            cout << handleSubtraction(a,b);
         break;
         case MULTIPLICATION:
             cin >> a >> b;
-            handleMultiplication(a,b);
+            cout << handleMultiplication(a,b);
         break;
         case DIVISION:
             cin >> a >> b;
-            handleDivision(a,b);
+            cout << handleDivision(a,b);
         break;
         case MODULO:
             cin >> a >> b;
-            handleModulo();
+            cout << handleModulo(a,b);
         break;
             default:
             cout << "wrong input" nL;
@@ -70,18 +80,3 @@ int getOption() {
     return input;
 }
 
-int handleAddition(auto a, auto b) {
-    return a + b;
-}
-int handleSubtraction(auto a, auto b) {
-    return a - b;
-}
-int handleMultiplication(auto a, auto b) {
-    return a * b; 
-}
-int handleDivision(auto a, auto b) {
-    return a / b;
-}
-int handleModulo(auto a, auto b) {
-    return a % b;
-}
