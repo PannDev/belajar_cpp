@@ -13,7 +13,7 @@ int main () {
     string awal = "km";
 
     int n = sizeof(satuan)/sizeof(*satuan);
-    // cout << n nL;
+    // cout << n nL;````````````````````````````````````````````````````````````````
 
     for (int i = 0; i < n; i++) {
         if(awal == satuan[i]){
