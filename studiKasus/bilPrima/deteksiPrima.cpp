@@ -8,6 +8,7 @@ int main() { PannDev
     int num; cout << "input number = "; cin >> num;
     int mod = 0;
 
+    //? i = num
     for (int i = num; i > 0; i--) {
         int res = num % i;
         if ( res == 0 ) {
