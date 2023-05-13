@@ -4,37 +4,50 @@ using namespace std;
 #define nL << endl
 
 //? Rumus Broca
-float beratIdeal(float tb, string gender) {
-    if (gender == "Laki") {
+float beratIdeal(float tb, string gender)
+{
+    if (gender == "Cowo")
+    {
         return (tb - 100) - ((tb - 100) * 10 / 100);
-    } else {
+    }
+    else
+    {
         return (tb - 100) - ((tb - 100) * 15 / 100);
     }
 }
 
 //? Fungsi untuk menampilkan hasil berat badan ideal
-void tampilHasil(float bb, float ideal) {
+void tampilHasil(float bb, float ideal)
+{
     cout nL;
-    if (bb < ideal) {
+    if (bb < ideal)
+    {
         cout << "Berat badan anda Kurus" nL;
-    } else if (bb > ideal) {
+    }
+    else if (bb > ideal)
+    {
         cout << "Berat badan anda Gemuk" nL;
-    } else {
+    }
+    else
+    {
         cout << "Berat badan anda ideal" nL;
     }
     cout << "Berat badan ideal anda adalah " << ideal << " kg" nL;
 }
 
 //! solve problem
-void solve() {
+void solve()
+{
     float tb, bb;
     string gender;
 
     cout << "Program berat badan ideal" nL;
-    cout << "Laki / Cewe \t\t\t? ";
+    cout << "Cowo / Cewe \t\t\t? ";
     cin >> gender;
-    if (gender != "Laki" && gender!= "Cewe") {
-        cout << "Input only Laki / Cewe." nL;
+    //! GUARD
+    if (gender != "Cowo" && gender != "Cewe")
+    {
+        cout << "Input only Cowo / Cewe." nL;
         return;
     }
     cout << "Masukkan berat badan (kg) \t= ";
@@ -48,7 +61,9 @@ void solve() {
     tampilHasil(bb, ideal);
 }
 
-int main() { PannDev
+int main()
+{
+    PannDev
     solve();
     return 0;
 }
