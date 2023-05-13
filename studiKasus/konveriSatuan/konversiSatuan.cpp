@@ -10,16 +10,20 @@ int main()
         // n 7
         // i = 0 - 6 //? i+1 biar ga ambigu
 
-    int s,e; //! untuk index integer
+        int s,
+        e; //! untuk index integer
     double num, res;
-    
+
     vector<string> satuan = {"km", "hm", "dam", "m", "dm", "cm", "mm"};
 
     //? angka nya berapa, satuannya apa, konversi ke mana
     string start, end; //! untuk satuan string
-    cout << "number = "; cin >> num;
-    cout << "Dari mana : "; cin >> start;
-    cout << "Ke Apa : "; cin >> end;
+    cout << "number = ";
+    cin >> num;
+    cout << "Dari mana : ";
+    cin >> start;
+    cout << "Ke Apa : ";
+    cin >> end;
 
     int n = satuan.size(); //* cek panjang
 
@@ -42,7 +46,8 @@ int main()
 
     res = num;
     //* START < END maka turun  KM(1) < CM(6)
-    if (s < e) {
+    if (s < e)
+    {
         //! z = res dikalikan 10 sebanyak z
         int z = e - s;
         for (int k = 0; k < z; k++)
@@ -51,7 +56,8 @@ int main()
         }
     }
     //* START > END maka naik  CM(6) > KM(1)
-    else if (s > e) { 
+    else if (s > e)
+    {
         //! z = res dibagi 10
         int z = s - e;
         for (int k = 0; k < z; k++)
