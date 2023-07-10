@@ -11,6 +11,7 @@ typedef pair<int,int> pi;
 #define S second
 #define PB push_back
 #define MP make_pair
+#define POP pop_back
 #define len(s) (int)s.size()
 #define coutn(x) cout<<x<<'\n'
 #define couts(x) cout<<x<<' '
@@ -27,7 +28,17 @@ ll mod = 1000000007;
 //? void
 void solve() {
     
-    printf("hai\n");
+    double n; cin(n);
+    // double truncN = trunc(n); //!doesnt work
+    int floor = n, ceil = n;
+
+    if(n == int(n)) { //! handle if 1.0 == 1 
+        coutn(floor<<" "<<ceil);
+    } else if (n < 0) {
+        coutn(floor - 1<<" "<<ceil);
+    } else if (n > 0) {
+        coutn(floor<<" "<<ceil + 1);
+    }
     
 }
 
