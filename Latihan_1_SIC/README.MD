@@ -1,1 +1,1 @@
-#[Enter Contest](https://www.hackerrank.com/latihan-1-sic)
+[Enter Contest](https://www.hackerrank.com/latihan-1-sic)
