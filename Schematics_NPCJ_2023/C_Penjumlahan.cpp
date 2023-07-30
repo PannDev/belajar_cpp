@@ -18,18 +18,15 @@ typedef pair<int,int> pi;
 #define PannDev ios_base::sync_with_stdio(0);cin.tie(0);cout.tie(0);
 #define slv solve();
 
-ll mod = 1e9+7;
-
-ll sumMod (ll a, ll b) {
-    return ( (a % mod) + (b % mod) % mod ); 
-}
+ull mod = 1e9+7;
 
 //? void
 void solve() {
     
-    ll a, b; cin >> a >> b;
+    ull a, b; cin >> a >> b;
+    a%=mod; b%=mod;
 
-    cout << sumMod(a,b) << endl;
+    cout << (a+b) % mod;
     
 }
 
